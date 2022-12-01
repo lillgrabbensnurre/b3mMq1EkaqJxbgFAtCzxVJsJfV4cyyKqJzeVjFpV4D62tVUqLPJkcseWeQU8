@@ -1,0 +1,93 @@
+@font-face {
+  font-family: font;
+  src: url(font.ttf);
+  font-display: swap;
+}
+
+* {
+  font-family: font;
+  margin: 0;
+  color: #c41508;
+  text-align: center;
+}
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  font-size: max(2.5vw, 30px);
+  -webkit-text-stroke: 0.02vw #c41508;
+  overflow-wrap: break-word;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+}
+
+.social-media img:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(17, 72, 224, 0.3);
+}
+main {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.indexdel {
+  position: relative;
+  min-width: 270px;
+  border: solid#113864 4px;
+  background-color: rgb(255, 168, 168);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 839px) {
+  .indexdel {
+    min-height: 30vh;
+    width: 50vw;
+  }
+  .logga {
+    min-width: 85px;
+  }
+  .xorsist-logga {
+    min-width: 150px;
+  }
+}
+@media (min-width: 839px) {
+  .indexdel {
+    min-height: 80vh;
+    width: 70vw;
+  }
+  .logga {
+    min-width: 130px;
+  }
+  .xorsist-logga {
+    min-width: 300px;
+  }
+}
+.logga {
+  width: 10vw;
+}
+.xorsist-logga {
+  width: 15vw;
+}
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+.botten {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
